@@ -105,7 +105,11 @@ Some corrections required implementation assumptions that were not explicitly de
 ---
 ## How to run
 
-Install the required packages:
+Install the following requirements:
+
+- Python 3.12
+- AWS CLI
+- Python packages listed in `requirements.txt`
 
 ```bash
 pip install -r requirements.txt
