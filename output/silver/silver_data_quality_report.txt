@@ -1,0 +1,56 @@
+SILVER DATA QUALITY REPORT
+==================================================
+
+SILVER_PARTICIPANTS
+• No duplicate participant IDs found.
+• All chronotypes are valid (A/B).
+
+SILVER_DEVICE_METADATA
+• No duplicate participant IDs found.
+• No orphaned participant IDs found.
+• 15 firmware_version values were originally blank and recovered from device_label.
+
+SILVER_WELLNESS_SURVEY
+• No duplicate rows found.
+• 1 orphaned participant IDs found: P999
+• All fatigue_score values are within [1, 5].
+• All stress_score values are within [1, 5].
+• All readiness_score values are within [0, 10].
+• All sleep_quality_score values are within [1, 5].
+
+SILVER_SLEEP_SESSIONS
+• No duplicate rows found.
+• No orphaned participant IDs found.
+• 3 sessions have sleep duration greater than 12 hours.
+• P026 (2026-01-23): sleep_end corrected from 2026-01-23 19:28:46 to 2026-01-23 08:10:28.
+• P035 (2026-01-20): sleep_end corrected from 2026-01-20 20:30:03 to 2026-01-20 06:17:51.
+• P039 (2026-01-14): sleep_end corrected from 2026-01-14 19:38:10 to 2026-01-14 05:17:39.
+
+SILVER_SLEEP_STAGES
+• No duplicate rows found.
+• No orphaned participant IDs found.
+• All sleep stages are valid.
+• 4 duration values were corrected.
+• P007 at 2026-01-21 00:04:21: duration corrected from 372 to 194 minutes.
+• P010 at 2026-01-19 22:41:55: duration corrected from 307 to 144 minutes.
+• P024 at 2026-01-11 01:14:50: duration corrected from 394 to 200 minutes.
+• P035 at 2026-01-17 00:09:46: duration corrected from 302 to 150 minutes.
+
+SILVER_STEPS_EVENTS
+• 5767 duplicate rows found.
+• No orphaned participant IDs found.
+• 63572 rows had steps/hour unit errors.
+• 2 rows had physically impossible step values.
+• 3 multi-hour data gaps detected.
+• P010: 1440 timestamps corrected from 2026-01-09 to 2026-01-08.
+• P019: 1440 timestamps corrected from 2026-01-09 to 2026-01-08.
+• P022: 1440 timestamps corrected from 2026-01-09 to 2026-01-08.
+• P025: 1440 timestamps corrected from 2026-01-09 to 2026-01-08.
+
+SILVER_HEART_RATE_EVENTS
+• 5767 duplicate rows found.
+• No orphaned participant IDs found.
+• 2880 UTC timestamps converted to local time.
+• 4 heart-rate values are outside the valid range.
+• 360 heart-rate values identified as stuck-sensor flatlines.
+
