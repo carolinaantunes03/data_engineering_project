@@ -41,12 +41,11 @@ Follow the official AWS installation guide for your operating system: [AWS CLI I
 Use the provided S3 location to download the project data to your local machine.
 
 ```bash
-aws s3 cp s3://de-tech-assessment-396587179375-us-east-1-an/data/ ./data \
-    --recursive --no-sign-request
+aws s3 cp s3://de-tech-assessment-396587179375-us-east-1-an/data/ . --recursive --no-sign-request
+
 ```
 
 After downloading the data, create a folder named data in the root of the project. The downloaded source tables should be placed inside the data/ folder, preserving their original folder structure. The data/ directory contains the raw input data used to build the Bronze layer.
----
 
 ## Architecture
 
